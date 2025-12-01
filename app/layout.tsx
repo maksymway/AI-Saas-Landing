@@ -10,7 +10,11 @@ export const metadata: Metadata = {
   description: "AI SaaS landing page template by  Maksym Yovyk",
 };
 
-
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en">
       <body>{children}</body>
